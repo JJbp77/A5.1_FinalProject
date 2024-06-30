@@ -1,0 +1,117 @@
+Jeremy Dukes
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: darkblue;
+    
+}
+
+.containter {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 75px;
+}
+
+footer {
+    position: fixed;
+    color: white;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: x-large;
+}
+
+.navbar {
+    float: left;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+/* the dropdown button*/
+.dropdown .dropbtn {
+    font-size: 25px;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 16px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    top: 25px;
+}
+
+.dropdown:hover {
+    background-color: crimson;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: navajowhite;
+    min-width: 160px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: grey;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.startButn:hover {
+    background: skyblue;
+    scale: 1.03em;
+}
+
+.stopButn:hover {
+    background: skyblue;
+    scale: 1.03em;
+}
+
+.cptJack {
+    width: 935px;
+    height: 500px;
+    margin-top: 50px;
+    margin-left: 350px;
+    place-items: center;
+}
+
+.myImage {
+    position: relative;
+    top: 120px;
+    left: 329px;
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+}
+
+.myImage {
+    animation-name: hor-movement, ver-movement;
+    animation-duration: 21s, 25s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+

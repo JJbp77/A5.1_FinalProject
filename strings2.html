@@ -1,0 +1,103 @@
+<!--Jeremy Dukes-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Palindrome Challenge</title>
+</head>
+    <!---This links the CSS stylesheet to the HTML document-->
+    <link rel="stylesheet" href="strings2.css">
+
+<body>
+    <header>
+        <h1>Assignment 5.1: Final Project: Website with Navigation and Tables</h1>
+    </header>
+    <nav>
+        <h2> Checkout the rest!
+            <div class="dropdown">
+                <button class="dropbtn" id="dropbtn">The Rest <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="./index.html">Index</a>
+                    <a href="./boards.html">Boards</a>
+                    <a href="./game.html">Games</a>
+                    <a href="./strings2.html">Validation</a>
+                    <a href="./collection.html">Collection Point</a>
+                </div>
+            </div>
+        </h2>
+    </nav>
+    
+    <!--This is the audio file that plays on a loop the duration of the time the user is on the page-->
+    <audio id="player" autoplay controls loop>
+        <source src="alien_spaceship.wav" type="audio/wav">
+    </audio>
+
+    <form id="myUserForm" name="myUserForm" onsubmit="validations()">
+        
+        <!--This container is the opening introduction to the page or form-->
+        <div class="wrapper1">
+            
+              
+            <header>
+                <h1>
+                    Welcome to The Palindrom Challenge!
+                </h1>
+                <p>
+                    Please tell us a little bit bout yourself!
+                </p>
+            </header>
+
+            <!--This contaioner collects the user's name and region they hail from-->
+            <div class="inputs" id="meetNgreet">
+                <label for="name1" placeholder="No more than 20 characters please!">First Name:</label>
+                <input type="text" id="name1" name="name1" maxlength="20" required><br><br>
+
+                <label for="name2" placeholder="No more than 20 characters please!">Last Name:</label>
+                <input type="text" id="name2" name="name2" maxlength="20" required><br><br>
+
+                <label for="stfrom" placeholder="No more than 10 characters please!">Home State:</label>
+                <input type="text" id="stfrom" name="stfrom" maxlength="2" required><br><br>
+
+                <label for="zcode" placeholder="No more than 5 digits please!">Zip Code:</label>
+                <input type="number" id="zcode" name="zcode" maxlength="5" required><br>
+            </div>
+            
+            <!--This container is the introduction to Palindromes -->
+            <div class="wrapper2">
+                <header>
+                    <h2>What's your favorite Palindrome?</h2>
+                </header>
+            </div>
+
+             <!--This section will post the results of the user inputs after the functions have run-->
+             <p class="info-txt" id="welcome"></p>
+             <p class="info-txt" id="results"></p>
+
+            <!--This container will collect the user palindrome input-->
+            <div class="inputs" id="palindrome">
+                <input type="text" id="userInput" spellcheck="false" placeholder="PLEASE ENTER YOUR PALINDROME HERE!" required><br>
+                <p>
+                    A Palindrome is a word, or phrase even, that reads the same backwards and forwards. For example "Rotor"!.
+                </p>
+                <button type="submit" onclick="myPalindrome()">Submit</button><br>
+                <button type="button" onclick="tryAgain()">Try Again?</button><br>
+                <!--This button exits the tryAgain looping function-->
+                <button type="button" onclick="exitLoop()">Exit</button>
+            </div>
+            
+        </div>
+    </form>
+        
+    <!--This script tag below links the javascript file to this html-->
+    <script src="strings2.js"></script>
+
+    <footer>
+        --Jeremy Dukes--<br>
+        University of Advancing Technology<br>
+        2625 Baseline Rd.<br>
+        Tempe, AZ 85283<br>
+    </footer>
+
+</body>
+</html>

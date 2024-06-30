@@ -1,0 +1,118 @@
+.container { 
+	width: 70%; 
+	margin: auto; 
+	text-align: center; 
+} 
+
+.dice { 
+	text-align: center; 
+	display: inline-block; 
+	margin: 10px; 
+} 
+
+body { 
+	background-color: coral; 
+	margin: 0; 
+} 
+
+h1 { 
+	margin: 30px; 
+	font-family: "Lobster", cursive; 
+	text-shadow: 5px 0 #232931; 
+	font-size: 4.5rem; 
+	color: darkblue; 
+	text-align: center; 
+} 
+
+h2{
+   text-align: center;
+}
+
+p { 
+	font-size: 2rem; 
+	color: darkblue; 
+	font-family: "Indie Flower", cursive; 
+} 
+
+img { 
+	width: 100%; 
+} 
+
+.bottom { 
+	padding-top: 30px; 
+} 
+
+.butn { 
+	background-color: navajowhite; 
+	font-family: "Indie Flower", cursive; 
+	border-radius: 7px; 
+	color:  darkblue; 
+	font-size: 30px; 
+	padding: 16px 25px 16px 25px; 
+	text-decoration: none; 
+} 
+
+.butn:hover { 
+	background: #232931; 
+	text-decoration: none; 
+} 
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: x-large;
+}
+
+/* This is for the Dropdown container*/
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* the dropdown button*/
+.dropdown .dropbtn {
+    font-size: 25px;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    color:black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown:hover {
+    background-color: crimson;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: navajowhite;
+    min-width: 160px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: grey;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+

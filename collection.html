@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="collection.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection Point</title>
+</head>
+<body>
+    <nav>
+        <h2> Checkout the rest!
+            <div class="dropdown">
+                <button class="dropbtn" id="dropbtn">The Rest <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="./landing.html">Landing</a>
+                    <a href="./index.html">Index</a>
+                    <a href="./boards.html">Boards</a>
+                    <a href="./game.html">Games</a>
+                    <a href="./strings2.html">Validation</a>
+                </div>
+            </div>
+        </h2>
+    </nav>
+
+    <audio id="player" autoplay controls loop>
+        <source src="Jeopardy.mp4" type="audio/wav">
+    </audio>
+
+    <form id="collectionForm" name="collect">
+        <div class="wrapper3">
+            <header>
+                <h1> Welcome! Thank you for stopping by </h1>
+                <p> How well do you know your friends and family? Let's see, answer a few simple questions below.</p>
+            </header>
+
+            <!--This is the where the user inputs their information into the form-->
+            <div class="input">
+                <label for="name1">First Name</label>
+                <input type="text" id="name1" name="name1" placeholder="Please enter your first name" maxlength="40" required><br><br>
+
+                <label for="name2">Last name</label>
+                <input type="text" id="name2" name="name2" placeholder="Please enter your last name" maxlength="40" required><br><br>
+
+                <label for="battle">Friend #1</label>
+                <input type="text" id="battle" name="battle" placeholder="Enter your best friends name" required><br><br>
+
+                <label for="favoriteFood">Favorite Food</label>
+                <input type="text" id="favoriteFood" name="favoriteFood" placeholder="What is your friends favorite food?" required><br><br>
+
+                <label for="meet">Where'd y'all meet?</label>
+                <input type="text" id="meet" name="meet" placeholder="Where'd y'all meet?" required><br><br>
+
+                <label for="date">When did y'all meet?</label>
+                <input type="text" id="date" name="date" placeholder="When did y'all meet?" required><br><br>   
+                
+                <button type="button" onclick="myTable()">Submit</button>
+            </div>
+        </div>
+    </form>
+
+    <div class="container">
+        <h3>Collection Point</h3>
+        <table id="myTable" style="width: 50%">
+            <tbody id="tableBody">
+                <tr>
+                    <th>Name</th>
+                    <th>Friend</th>
+                    <th>Favorite Food</th>
+                    <th>When</th>
+                    <th>Where</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="foot">
+        <footer>
+            --Jeremy Dukes--<br>
+            University of Advancing Technology<br>
+            2625 Baseline Rd.<br>
+            Tempe, AZ 85283<br>
+        </footer>
+    </div>
+
+    <script src="collection.js"></script>
+    
+</body>
+</html>
